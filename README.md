@@ -1,4 +1,4 @@
-# Delaunay2D
+# Convex Hull
 2D and 3D convex hull algorithm implemented by c++
 # Result
 ![origin](./data/frame_0004.png)
