@@ -27,4 +27,6 @@ set(SOURCES
 add_executable( convexHull ${SOURCES})
 
 # 将库文件链接到可执行程序上
-target_link_libraries(${PROJECT_NAME} ${dlib_LIBRARIES}  ${OpenCV_LIBS} tinyobjloader)
+#target_link_libraries(${PROJECT_NAME} ${dlib_LIBRARIES}  ${OpenCV_LIBS} tinyobjloader)
+target_link_libraries( ${PROJECT_NAME} debug ${dlib_LIBRARIES}  ${OpenCV_LIBS} tinyobjloaderd)
+target_link_libraries( ${PROJECT_NAME} optimized ${dlib_LIBRARIES}  ${OpenCV_LIBS} tinyobjloader)
