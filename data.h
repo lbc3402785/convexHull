@@ -138,8 +138,9 @@ public:
     void calculate_to_do(std::vector<Point3T>& points){
 
         for( Point3T p : points){
+			if (p.id == pointA.id || p.id == pointB.id || p.id == pointC.id)continue;
             T dist = distance(p);
-            if (dist > 1.0e-10){
+            if (dist > 1.0e-7){
                 to_do.push_back(p);
             }
         }

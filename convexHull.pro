@@ -20,9 +20,10 @@ INCLUDEPATH+=D:\soft\eigen-3.4.0
 INCLUDEPATH+="C:\Program Files\dlib_project\include"
 INCLUDEPATH+=$$OPENCV_INCLUDE_DIRS
 INCLUDEPATH+=$$ZLIB_INCLUDE_DIRS
+INCLUDEPATH+="C:\Program Files\tinyobjloader\include"
 LIBS+=-L$$OPENCV_LIBRARY_DIRS -lopencv_world3415
 LIBS+=-L"C:\Program Files\dlib_project\lib" -ldlib19.22.99_release_64bit_msvc1916
-
+LIBS+=-L"C:\Program Files\tinyobjloader\lib" -ltinyobjloader
 #SOURCES += D:\soft\dlib\dlib\all\source.cpp
 SOURCES += main.cpp \
     test.cpp \
@@ -32,5 +33,6 @@ HEADERS += \
     convexhull2d.h \
     convexhull3d.h \
     data.h \
+    objoperator.h \
     test.h \
     Dlib.h

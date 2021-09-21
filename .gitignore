@@ -1,7 +1,0 @@
-/release
-/debug
-/build
-*.pro.*
-Makefile*
-*.obj
-/build-vs2017

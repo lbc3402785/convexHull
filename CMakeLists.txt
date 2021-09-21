@@ -15,7 +15,8 @@ message(${OpenCV_INCLUDE_DIRS})
 
 find_package(dlib REQUIRED)
 include_directories(${dlib_INCLUDE_DIRS})
-
+include_directories("C:/Program Files/tinyobjloader/include")
+link_directories("C:/Program Files/tinyobjloader/lib")
 set(SOURCES
 	Dlib.cpp
     Test.cpp
@@ -26,4 +27,4 @@ set(SOURCES
 add_executable( convexHull ${SOURCES})
 
 # 将库文件链接到可执行程序上
-target_link_libraries(${PROJECT_NAME} ${dlib_LIBRARIES}  ${OpenCV_LIBS})
+target_link_libraries(${PROJECT_NAME} ${dlib_LIBRARIES}  ${OpenCV_LIBS} tinyobjloader)
